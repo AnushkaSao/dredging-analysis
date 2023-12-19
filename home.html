@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <!-- <img src="{{ url_for('static', filename='banner.png') }}" alt="Example Image" width="1500px" height="800px"> -->
+    <style>
+         body {
+            background: url('/static/banner.png');
+            background-repeat: no-repeat;
+            background-size: 1400px;
+        }
+        .vision{
+          background: url('/static/vm.jpeg');
+            background-repeat: no-repeat;
+            height: 800px;
+            width: 1200px;
+            margin-top:270px;
+        }
+        .contact{
+          background-image: url('/static/_con.jpg');
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            height: 800px;
+            width: 1400px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="navigation">
+    <nav>
+    <div class="split left">
+      <img src="{{ url_for('static', filename='logo.jpeg') }}" alt="Logo" style="height: 100px; width: 300px; margin-left: 20px;">
+      </div>
+      
+      <div class="split right">
+        <!-- <div class="centered"> -->
+            <a href="http://127.0.0.1:5000/">Home</a>
+            <a href="#vision">About</a>
+            <a href="#vessels">Vessels</a>
+            <a href="#">News & Insights</a>
+            <a href="#Survey">Survey</a>
+            <a href="#contact">Contact</a>
+            
+        <!-- </div> -->
+      </div>
+    </nav>
+    </div>
+    
+    <div class="groupname"><h1>HarbourHeroes</h1>
+    <p>Ready for your dredging job</p>
+    <div class="button"><button><a href="http://127.0.0.1:5502/templates/ps.html">View</a></button></div>
+  </div>
+  
+  <div class="vision" id="vision">
+    <h1>Purpose,Vision and </h1><h1>Mission</h1>   
+   
+      
+  </div>
+  <div class="purpose">
+    <h1>Our Purpose</h1>
+    <p>
+    At Harbours Heroes, our purpose is clear to revolutionize how dredging is approached and executed. We recognize the critical role waterways play in global connectivity, trade, and the health of ecosystems. Therefore, we have dedicated ourselves to creating a dredging analysis system that not only optimizes efficiency but also places environmental responsibility at its core.
+    </p>   
+  </div>
+  <div class="flex-vision">
+    <!-- First part -->
+    <div class="vpart1">
+        <!-- Content for the first part -->
+        <h2>This is our vision</h2>
+        <p>To be the global leader in intelligent dredging solutions, fostering resilient water ecosystems for generations to come.</p>
+    </div>
+  
+    <!-- Second part -->
+    <div class="vpart2">
+      <img src="{{ url_for('static', filename='vision.jpg') }}" alt="Vision" >
+  
+      <!-- <img src="{{ url_for('static', filename='vision.jpeg') }}" alt="Logo" style="height: 100px; width: 300px; margin-left: 20px;"> -->
+  
+        <!-- <img width="600px" height=" 300px" src="vision.jpg"> -->
+    </div>
+  </div>
+  <div class="flex-mission">
+    <!-- First part -->
+    <div class="mpart1">
+        <!-- Content for the first part -->
+        <img src="{{ url_for('static', filename='mission.jpg') }}" alt="Logo" style="width: 600px; height: 300px;" >
+  
+        <!-- <img width="600px" height="300px" src="mission.jpg"> -->
+    </div>
+  
+    <!-- Second part -->
+    <div class="mpart2">
+        
+        <h2>This is our mission</h2>
+        <p>To enhance waterway sustainability and optimize navigational infrastructure through cutting-edge dredging analysis. We are committed to leveraging advanced data analytics and machine learning technologies to deliver precise, efficient, and environmentally responsible solutions. Our mission is to empower stakeholders with actionable insights, ensuring the longevity and ecological harmony of aquatic environments while supporting the development of thriving and resilient communities worldwide.</p>
+        
+    </div>
+  </div>
+
+  </div>
+  <div class="vessels" id="vessels"><h1>Vessels</h1></div>
+  <div class="flex-container">
+    <!-- First part -->
+    <div class="part1">
+      <h1>What is Dredging?</h1>
+      <p>Dredging is the process of excavating and removing sediments, debris,
+        or other materials from the bottom of water bodies, such as rivers, lakes, harbors, or coastal areas.
+        The primary purpose of dredging is to create or maintain navigable waterways, ports, and harbors, as
+        well as to address various environmental and engineering needs.</p>
+      
+    </div>
+
+    <!-- Second part -->
+    <div class="part2">
+      <video width="640" height="360" controls>
+        
+        <source src="http://127.0.0.1:5502/templates/Dredgingvideo.mp4" type="video/mp4">
+    </video>
+    </div>
+    
+  </div>
+  </div>
+  
+</div>
+
+<div class="types">
+  <h1 style="padding-left: 10px;">Types of Dredgers</h1>
+  <div class="tpart1">
+    <img src="{{ url_for('static', filename='t1.jpeg') }}" alt="Logo" style="height: 300px; width: 300px; margin-left: 10px;">
+    <a href="http://127.0.0.1:5502/templates/TSD.html">Trailer Suction Dredger</a>
+  </div>
+
+  <!-- Second part -->
+  <div class="tpart2">
+    <img src="{{ url_for('static', filename='t2.jpeg') }}" alt="Logo" style="height: 300px; width: 300px; margin-left: 20px;">
+    <a href="http://127.0.0.1:5502/templates/cutter.html">Cutter Suction Dredger</a>
+  </div>
+  <div class="tpart3">
+    <img src="{{ url_for('static', filename='t3.jpeg') }}" alt="Logo" style="height: 300px; width: 300px; margin-left: 20px;">
+    <a href="http://127.0.0.1:5502/templates/jet.html">Jet Suction Dredger</a>
+</div>
+
+</div>
+<div class="pred">
+  <div class="df">
+    <!-- First part -->
+    <div class="dpart1">
+      <img src="{{ url_for('static', filename='dredgerfinder.webp') }}" alt="Logo" style="height: 300px; width: 300px; margin-left: 20px;">
+
+    </div>
+
+    
+    <div class="dpart2">
+        <h1>Dredgerfinder</h1>
+        <p>Chose the right dredger</p>
+        <div class="predbutton">
+        <button><a href="">predict</a></button>
+        </div>
+    </div>
+</div>
+  
+<div class="Survey" id="Survey">
+  <div class="info">
+    <h1 style="text-align: center;">SURVEY REPORT</h1>
+    <img src="http://127.0.0.1:5502/static/wind1.jpeg" alt="Your Image" style="height: 400px;
+    width: 700px;">
+    <span>
+        <h2>Kochi, Kerala, India: weather statistics and wind history</h2>
+    </span>
+    <h1>Kochi Wind forecast</h1>
+    <p>Wind direction is Southeast, wind speed varies between 4.5
+        and 8.9 mph with gusts up to 8.9 mph. The sky is cloudy with a
+        chance of rain 86%.</p>
+    <p>Wind and wave weather forecast for Fort Kochi, Kerala, India,
+        India contains detailed information about local wind speed,
+        direction, and gusts. Wave forecast includes wave height and
+        period.</p>
+    <p>These forecasts for Fort Kochi, Kerala, India are based on the
+        GFS model and were created for windsurfing, kitesurfing,
+        sailing and other extreme sports activities. All data updates 4
+        times a day. Predictions are available in steps from 1 to 3 hours
+        for up to 10 days.</p>
+    <p>
+        Use professional weather parameters: wind barbs, weather
+        fronts, isobars, and others. Study weather history for the past
+        11 years (2012-2023). Create sailing, hiking and biking routes
+        with weather in each point.</p>
+    <img src="http://127.0.0.1:5502/static/wind2.jpeg" alt="Your Image" style="height: 400px;
+    width: 700px;">
+    <h6 style="align-items: center;">Kochi, Kerala, India 10-Day Weather Forecast</h6>
+    <h3>Closest meteostation (16.71km):</h3>
+    <img src="http://127.0.0.1:5502/static/wind3.jpeg" alt="Your Image" style="height: 400px;
+    width: 700px;">
+    <img src="http://127.0.0.1:5502/static/wind4.jpeg" alt="Your Image" style="height: 400px;
+    width: 700px;">
+    <img src="http://127.0.0.1:5502/static/wind5.jpeg" alt="Your Image" style="height: 400px;
+    width: 700px;">
+    <p>SOME ADDITIONAL DATA:</p>
+    <img src="http://127.0.0.1:5502/static/wind6.jpeg" alt="Your Image" style="height: 400px;
+    width: 700px;">
+    
+    </div>
+</div>
+<div class="contact" id="contact">
+  <center><h1>Contact US</h1></center>
+
+    <form>
+        <label for="interest">I'm interested in *</label>
+        <select id="interest" name="interest">
+            <option value="" selected disabled>Select</option>
+            <option value="general">Survey</option>
+            <option value="product">Vessels</option>
+            <option value="support">Specification</option>
+        </select>
+
+        <label for="firstName">First name *</label>
+        <input type="text" id="firstName" name="firstName" required placeholder="Your First Name">
+
+        <label for="lastName">Last name *</label>
+        <input type="text" id="lastName" name="lastName" required placeholder="Your Last Name">
+
+        <label for="email">Email *</label>
+        <input type="email" id="email" name="email" required placeholder="Your Email">
+
+        <label for="message">Message *</label>
+        <textarea id="message" name="message" rows="4" placeholder="Your Message"></textarea>
+
+        <center><button type="submit">Submit</button></center>
+    </form>
+    <script type="text/javascript">
+      (function(d, m){
+          var kommunicateSettings = 
+              {"appId":"34c8f80f4fabb00a0b866df053e914ec6","popupWidget":true,"automaticChatOpenOnNavigation":true};
+          var s = document.createElement("script"); s.type = "text/javascript"; s.async = true;
+          s.src = "https://widget.kommunicate.io/v2/kommunicate.app";
+          var h = document.getElementsByTagName("head")[0]; h.appendChild(s);
+          window.kommunicate = m; m._globals = kommunicateSettings;
+      })(document, window.kommunicate || {});
+  /* NOTE : Use web server to view HTML files as real-time update will not work if you directly open the HTML file in the browser. */
+  </script>
+    
+</div>
+
+
+</body>
+</html>
